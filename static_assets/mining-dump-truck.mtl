@@ -1,0 +1,96 @@
+# Blender MTL File: 'None'
+# Material Count: 9
+
+newmtl Material__4040
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Tire_Defuse.png
+
+newmtl Material__4041
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Main_Defuse.png
+
+newmtl Material__4043
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Main2_Defuse.png
+
+newmtl Material__4045
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Floor_Normal.png
+map_Kd Floor_Defuse.png
+
+newmtl Material__4046
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Logo_Normal.png
+map_Kd Logo_Defuse.png
+
+newmtl Material__4048
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd SteelGuide_Defuse.png
+
+newmtl Material__4049
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Stuff_Normal.png
+map_Kd Stuff_Defuse.png
+
+newmtl Material__4051
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Stuff2_Defuse.png
+
+newmtl Material__4053
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Glass_Normal.png
+map_Kd Glass_Defuse.png

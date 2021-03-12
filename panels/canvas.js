@@ -27,7 +27,7 @@ class Canvas extends React.Component{
         return (
             <View style={styles.canvas}>
                 {this.state.currentSelected === 'Background' && <Background selectedRoom={this.state.selectedRoom} setSelectedRoom={this.setSelectedRoom}/>}
-                {this.state.currentSelected === 'Shop' && <Shop />}
+                {this.state.currentSelected === 'View Items' && <Shop />}
                 {this.state.currentSelected !== 'Background' &&  this.state.currentSelected !== 'Shop'
                 && <View style={styles.headingBox}>
                         <Text style={styles.headingText}>

@@ -16,6 +16,9 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultSurface()
   );
   
+  //3D Object View
+  r360.renderToLocation(r360.createRoot('3DObject'), r360.getDefaultLocation());
+
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('360_whiteRoom.jpg'));
 }

@@ -12,28 +12,28 @@ import {connect, setCurrent} from '../../store'
 
 items = [
     {
-      name:'Pringles',
-      asset: 'Pringles.jpg',
-      asset3D: 'Pringles.obj',
-      cost: 50
+      name:'Mining Truck',
+      asset: 'mining-dump-truck.png',
+      asset3D: 'mining-dump-truck',
+      description: 'Watch out when it backs up.'
     },
     {
-      name:'Pringless',
-      asset: 'Pringles.jpg',
-      asset3D: 'Pringles.obj',
-      cost: 300
+      name:'Fire Extinguisher',
+      asset: 'fire-extinguisher.png',
+      asset3D: 'fire-extinguisher',
+      description: 'Excellent propulsion device, also puts out fires.'
     },
     {
-      name:'Pringless',
-      asset: 'Pringles.jpg',
-      asset3D: 'Pringles.obj',
-      cost: 400
+      name:'Fox',
+      asset: 'fox.png',
+      asset3D: 'fox',
+      description: 'For those who cant decide if they like cats or dogs more.'
     },
     {
-      name:'Pringless',
-      asset: 'Pringles.jpg',
-      asset3D: 'Pringles.obj',
-      cost: 500
+      name:'Super Nintendo',
+      asset: 'super-nintendo.png',
+      asset3D: 'super-nintendo',
+      description: 'My score is the high score, your score is... not.'
     },
     
 ]
@@ -51,7 +51,7 @@ class Shop extends React.Component{
                 <View style={styles.canvas}>
                     <View style={styles.headingBox}>
                         <Text style={styles.headingText}>
-                            Shop (Click image to view model)               Funds: $999
+                            View Items
                         </Text>
                     </View>
                     <View style={styles.optionsBox}>
@@ -62,17 +62,13 @@ class Shop extends React.Component{
                                         <View key={index} style={{padding:5, margin:5, height: '100%', backgroundColor:'#fff', borderRadius:5, width: 173, borderWidth: 4, borderColor: this.state.selectedRoom === item.name ? 'rgba(0, 91, 181, 1)' : 'rgba(255, 255, 255,1)'}}>
                                              <VrButton onClick={()=>{
                                                  this.setState({selectedRoom : item.name})
-                                                 setCurrent(item.name)
+                                                 setCurrent(item.asset3D)
                                              }}>
                                                  <Image style={{width: 155, height: 155, borderRadius:5}} source={asset(item.asset)} />
                                                  <View style={{paddingTop:10}}>
-                                                     <Text style={{color:'rgba(19, 20, 20,1)', fontSize:25 }}>{item.name}</Text>
-                                                     <Text style={{color:'rgba(19, 20, 20,1)', fontSize:25 }}>${item.cost}</Text>
+                                                     <Text style={{color:'rgba(19, 20, 20,1)', fontSize:20 }}>{item.name}</Text>
+                                                     <Text style={{color:'rgba(19, 20, 20,1)', fontSize:18, marginTop:10 }}>{item.description}</Text>
                                                  </View>
-                                                 
-                                             </VrButton>
-                                             <VrButton style={{width:70, marginTop:'30%', borderRadius:5, backgroundColor:'rgba(31, 33, 36, 1)'}}>
-                                                 <Text style={{marginLeft:18}}>Buy</Text>
                                              </VrButton>
                                          </View>
                                 )
@@ -98,13 +94,7 @@ const styles = StyleSheet.create({
     optionsBox: {
         padding: 20,
         width: '100%',
-        height: '50%',
-        flexDirection: 'row'
-    },
-    optionsBox: {
-        padding: 20,
-        width: '100%',
-        height: '65%',
+        height: 350,
         flexDirection: 'row'
     },
     headingText: {

@@ -8,7 +8,7 @@ import {
 import MenuItem from '../components/menu/menuItem'
 
 
-const MenuItems = ['Search Movies', 'Saved Movies', 'Background', 'Code'];
+const MenuItems = ['View Items', 'Background'];
 
 
 class Menu extends React.Component{
